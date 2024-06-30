@@ -1,0 +1,53 @@
+object FMain: TFMain
+  Left = 358
+  Height = 432
+  Top = 10
+  Width = 782
+  Caption = 'FMain'
+  ClientHeight = 432
+  ClientWidth = 782
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  object Memo1: TMemo
+    Left = 456
+    Height = 258
+    Top = 96
+    Width = 296
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 782
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 782
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    object Button5: TButton
+      Left = 16
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Start'
+      TabOrder = 0
+      OnClick = Button5Click
+    end
+    object LMovementCount: TLabel
+      Left = 104
+      Height = 15
+      Top = 16
+      Width = 6
+      Caption = '0'
+    end
+  end
+end
